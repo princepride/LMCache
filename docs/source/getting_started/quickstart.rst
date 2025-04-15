@@ -38,7 +38,7 @@ To use vLLM's offline inference with LMCache, just simply add ``lmcache_vllm`` b
     from lmcache_vllm.vllm import LLM 
 
     # Load the model
-    model = LLM.from_pretrained("lmsys/longchat-7b-16k")
+    model = LLM("lmsys/longchat-7b-16k")
 
     # Use the model
     model.generate("Hello, my name is", max_length=100)
